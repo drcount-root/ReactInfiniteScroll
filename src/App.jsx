@@ -26,8 +26,19 @@ useEffect(() => {
     <React.Fragment>
       <div>{usersdata.map((item, index) => {
         return (
-          <div key={index}> Name : {item.name.title + ' ' + item.name.first+ ' ' + item.name.last}
+          <div key={index}> <div>
+            Name : {item.name.title + ' ' + item.name.first+ ' ' + item.name.last}
           </div>
+          <div>
+          DOB : {item.dob.date}
+          </div>
+          <div>
+          Mobile No : {item.cell}
+          </div>
+          <hr/>
+          </div>
+
+          
         )
       })}</div>
     </React.Fragment>
